@@ -99,6 +99,6 @@ class Auth_ORM extends Kohana_Auth_ORM
 			return FALSE;
 		}
 
-		return Bcrypt::check_password($password, $user->password);
+		return Bcrypt::check($password, $user->password);
 	}
 }
